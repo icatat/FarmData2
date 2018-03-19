@@ -9,7 +9,7 @@ urlpatterns = [
     url(r'^login/', views.login_user, name='login'),
     url(r'^$', views.index, name='index'),
     url(r'^logout', views.logout_user, name='logout'),
-
+    #url(r'^main/$', views.login_user, name = 'bootstrap/farmdata.html'),
     # CreateViews
     url(r'^create/AnimalGroup$', views.AnimalGroupCreateView.as_view(), name="AnimalGroupCreate"),
     url(r'^create/Breed$', views.BreedCreateView.as_view(), name="BreedCreate"),
